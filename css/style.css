@@ -1,0 +1,160 @@
+:root{
+ --Blue: hsl(223, 87%, 63%);
+ --PaleBlue: hsl(223, 100%, 88%);
+--LightRed: hsl(354, 100%, 66%);
+--Gray: hsl(0, 0%, 59%);
+--VeryDarkBlue: hsl(209, 33%, 12%);
+--fs: 20px;
+--fs-2: 1rem;
+--ff: 'Libre Franklin', sans-serif;
+}
+
+*,*::before,*::after{
+ margin: 0;
+ padding: 0;
+}
+
+html{
+ box-sizing: border-box;
+}
+
+body{
+ margin: 0;
+ padding: 0;
+ box-sizing: inherit;
+ font-size: var(--fs-2);
+ font-family: var(--ff);
+}
+
+img{
+ max-width: 100%;
+}
+
+h1,h2,h3{
+ margin: 0;
+}
+
+input,button{
+ box-sizing: border-box;
+ width: 90%;
+ padding: 1rem;
+ font-size: var(--fs-2);
+ border-radius: 50px;
+}
+
+.container{
+ max-width: 500px;
+ margin: 0 auto;
+ text-align: center;
+}
+
+#main{
+ margin-inline: 1rem;
+}
+
+.logo{
+ margin: 4rem 0 2rem 0;
+}
+
+.slim{
+ color: var(--Gray);
+ font-weight: 300;
+}
+
+
+.main__p{
+ margin: 1rem 0 2.5rem 0;
+ font-weight: 600;
+ color: var(--Gray);
+ font-size: var(--fs);
+}
+
+.error .error-message{
+ display: block;
+}
+
+.error-message{
+ margin: .4rem 0 2rem 0;
+ font-size: var(--fs-2);
+ color: var(--LightRed);
+ display: none;
+}
+
+.input-group{
+ margin-bottom: 1rem;
+}
+
+
+#email{
+ border: 2px solid var(--PaleBlue);
+ padding-left: 3rem;
+}
+
+.error #email {
+ border: 2px solid var(--LightRed);
+}
+
+#email::placeholder{
+ color: var(--PaleBlue);
+}
+
+.submit{
+ background-color: var(--Blue);
+ border: 2px solid var(--PaleBlue);
+ color: #fff;
+ margin-bottom: 3rem;
+ box-shadow: 0 7px 6px rgba(0, 0, 0, .2);
+ cursor: pointer;
+}
+
+.dashboard{
+ margin-bottom: 5rem;
+}
+
+.icons{
+ margin-bottom: 2rem;
+}
+
+.icon{
+ margin-inline: 1rem;
+ padding: 3px;
+ width: 20px;
+ font-size: .9rem;
+ height: 15px;
+ border-radius: 50%;
+ color: var(--Blue);
+ text-align: center;
+ border: 1px solid var(--Blue);
+}
+
+.text{
+ color: var(--Gray);
+ margin-bottom: 1rem;
+ font-size: 14px;
+}
+
+
+@media (min-width: 700px) {
+ .container{
+  max-width: 700px;
+ }
+
+ .flex{
+  display: flex;
+  gap: .8rem;
+ }
+
+ .input-group{
+  width: 100%;
+ }
+
+ .submit{
+  width: 60%;
+  height: 55px;
+ }
+
+ .error-message{
+  text-align: start;
+  padding-left: 2rem;
+ }
+}
